@@ -23,3 +23,5 @@
 hs_err_pid*
 Fichero_ignorar.txt
 /01_ejemploJava/nbproject/private/
+/01_ejemploJava/build/
+/01_ejemploJava/dist/
