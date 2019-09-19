@@ -10,5 +10,17 @@ package ejemplojava;
  * @author alumno
  */
 public class NewClass {
+
+    public NewClass() {
+    }
+
+    @Override
+    public String toString() {
+        return "NewClass{" + '}';
+    }
+    
+    public NewClass(int x) {
+        System.out.println("x "  + x);
+    }
     
 }
