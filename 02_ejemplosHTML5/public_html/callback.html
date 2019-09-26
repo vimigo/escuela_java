@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>callback</div>
+        <div id="mensajes"></div>
+        <script>
+             let mensajes =document.getElementById("mensajes");
+            function funNormal(param,funCllbk){
+                mensajes.innerHTML += `Fun normal ${param} invocada<br>`;
+                funCllbk(param);
+            }
+            
+            function funCalback_A(conQue){
+                mensajes.innerHTML +=`callback a con ${conQue}<br>`;
+            }
+            function funCalback_B(conQue){
+                mensajes.innerHTML +=`callback b con ${conQue}<br>`;
+            }
+            funNormal("aaa",funCalback_A);
+            funNormal("Bbbb",funCalback_B);
+            mensajes.onclick=function(){
+                funNormal("CCC",funCalback)
+            }
+        </script>
+    </body>
+</html>

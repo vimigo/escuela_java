@@ -1,0 +1,49 @@
+ body{
+      background-color: blue;
+      }
+header{
+    
+       background-color:    white;  
+       text-align: center;
+       text-orientation:     mixed    ; 
+       padding: 20px;
+       
+      }  
+*{
+    background-image: url "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwj3iKfPmt_kAhUh2uAKHV6vAnAQjRx6BAgBEAQ&url=https%3A%2F%2Fhtmlcolorcodes.com%2Fes%2Ftutoriales%2Fhtml-color-de-fondo%2F&psig=AOvVaw07VQMd2aabQFsj_czbcJsF&ust=1569062266927166" ;
+          margin: 0px;
+          padding: 0px;
+          
+      }
+.letraazul{
+          color:blue;
+       }
+.muchomargen{
+           
+           margin: 60px 20px 40px 56px;
+       }
+       nav,.fondonarnja{
+           
+           background-color: orange;
+       }
+      p, #miid{
+           background-color: white;
+           text-transform: uppercase;
+       }
+       
+       header nav{ /* todos los nav que esten dentro de un header*/
+           font-style:italic ;
+           
+       }
+        header > nav{ /* todos los nav de la pagina*/
+           font-style:italic ;
+           
+       }
+       div > *:hover{
+           background-color: red;
+       }
+       ul :hover
+       {
+         color: bisque;
+       }
+       

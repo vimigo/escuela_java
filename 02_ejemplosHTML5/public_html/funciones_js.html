@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>funciones js</div>
+        <script>
+            function miFuncion(arg1,arg2){
+                document.write("<p>Arg1" + arg1 + "</p>");
+                document.write("<p>Arg2" + arg2 + "</p>");
+                if(arguments.length > 2){
+                    document.write("<h2>Tercer arg" + argumentos[2]+ "</h2>");
+                    if(arguments.length>3){
+                        for (arg in arguments)
+                            document.write ("<h2> " + arg +" </h2>");
+    
+}
+                    }
+                }
+            
+            miFuncion ("argumento texto",2000);
+            miFuncion (new Object(),false);
+            miFuncion ("un solo argumento");
+            miFuncion ("muchos",100,null,"argumentos");
+        
+        //otra manera de crear funcion
+          var otrafuncion = funcion(veces);
+          for(var i =0;i < veces ; i++){
+              document.write("<p> vez" + i +"</p>");
+          }
+          otrafuncion(3);
+          var noTipica =new Function("x","y","return x + y");
+          document.write("<p>" + noTipica(2,3)+ "</p>");
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="undiv">dom</div>
+        <button id="elboton" value="pulsame" onclick="pulsar()">
+            
+        </button>
+        <script>
+            document.getElementById("undiv");
+            undiv.style="background-color: red";
+            undiv.setAttribute("Style", "background-color: blue");//esto es lo mismo que arriba
+           let parrafo = document.createElement("p");
+           let textoparrafo=document.createTextNode("texto en el parrafo");
+                   parrafo.appendChild(textoparrafo);
+                   undiv.appenChild(parrafo);
+        
+        </script>
+    </body>
+</html>

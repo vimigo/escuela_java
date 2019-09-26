@@ -3,14 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package poo;
+package threads;
 
 /**
  *
  * @author alumno
  */
-public interface Rodable {
-    // int ruedas = 10;
-    byte getNumRuedas();
-    void moverse();    
+public interface IStringAux {
+    String quitarEspacios(String str);
 }

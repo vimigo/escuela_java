@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/calculadora.css">
+    </head>
+    <body>
+        <div>calculadora</div>
+        <div>
+            <br>
+           
+             <label >  inserte un numero</label>
+      
+             <input id="num1" type="text"/>
+        </div>
+        <div>
+            <br>
+            <label>inserte otro numero </label>
+            <input id="num2" type ="text"/>
+        </div>
+        <br>
+        <div>Operaciones
+            <br>
+        <input id="suma" class="boton" type="button" value="+" onclick="sumar()"/>   
+        <!--<button id="suma" class="boton" value="suma" onclick="sumar()"></button>-->
+          <input id="resta" class="boton" type="button" value="-" onclick="restar()"/>
+          <input id="multip" class="boton" type="button" value="X" onclick="multiplicar()"/>
+          <input id="divi" class="boton" type ="button" value="/" onclick="dividir()"/>
+          <input id="reset" class="boton" type ="button" value="reset" onclick="reset()"/>
+        </div>
+          <p id="mip"></p>
+          <script>
+            function sumar(){
+                
+                let num1=document.getElementById("num1");
+                  num1= num1.value;
+               let num2=document.getElementById("num2");
+               num2=num2.value;
+              
+             suma = parseFloat(num1)+parseFloat(num2) ;   
+            
+             if(isNaN(suma)){
+                 //window.alert("Intentas sumar letras");
+               //  document.write("Intentas sumar letras");
+                 document.getElementById("mip").innerHTML="Intentas sumar letras";
+             }else
+        // document.write("<p2 > " + suma + "</p>"); 
+           document.getElementById("mip").innerHTML=("la suma es" + suma);
+                
+            }
+            function restar(){
+                let num1=document.getElementById("num1");
+                  num1= num1.value;
+               
+                
+              
+               let num2=document.getElementById("num2");
+                num2=num2.value;
+                let resta= parseFloat(num1) - parseFloat(num2);
+                 if(isNaN(resta)){
+                // window.alert("Intentas restar letras");
+                // document.write("Intentas restar letras");
+                 document.getElementById("mip").innerHTML=("Intentas restar letras");
+             }else
+               // document.write("<p2 > " + resta + "</p>"); 
+            document.getElementById("mip").innerHTML=("la resta es" + resta);
+             
+            }
+            function multiplicar(){
+                let num1=document.getElementById("num1");
+                  num1= num1.value;
+               
+                
+              
+               let num2=document.getElementById("num2");
+                num2=num2.value;
+                let mult= num1 * num2;
+                 if(isNaN(mult)){
+                  //   document.write("Intentas multiplicar letras");
+                 //window.alert("Intentas multiplicar letras");
+                 document.getElementById("mip").innerHTML=("Intentas multiplicar letras");
+             }else
+               // document.write("<p2> " + mult + "</p>"); 
+             document.getElementById("mip").innerHTML=("la resta es" + mult);
+            }
+            function dividir(){
+              let num1=document.getElementById("num1");
+                  num1= num1.value;
+               
+                
+              
+               let num2=document.getElementById("num2");
+                num2=num2.value;
+                let div =num1 / num2;
+                 if(isNaN(div)){
+                    // document.write("Intentas dividir letras");
+                 //window.alert("Intentas dividir letras");
+                 document.getElementById("mip").innerHTML=("Intentas dividir letras");
+             }else
+            // document.write("<p2> " + div + "</p>"); ;
+            document.getElementById("mip").innerHTML=("La division es" + div);
+            }
+            function reset(){
+                
+               document.getElementById('num1').value='';
+               document.getElementById('num2').value='';
+                        
+            }
+          
+        </script>
+    </body>
+</html>
+          <!--<input id="multip" value="multiplicar" onclick="multiplicar()"/>-->
+      <!--  <button id="restar" value="restar" onclick="restar()"></button>-_>
+      
+        <button id="multip" value="multiplicar" onclick="multiplicar()"></button>
+        <button id="div" value="dividir" onclick="dividir()"></button>
+        

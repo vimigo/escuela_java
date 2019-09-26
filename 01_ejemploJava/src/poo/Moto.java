@@ -11,6 +11,8 @@ package poo;
  */
 public class Moto extends Vehiculo implements Rodable {
 
+    public static final byte RUEDAS = 2;
+    
     public Moto(String marca) {
         super(marca, "SIN MATRICULAR");
     }
@@ -26,14 +28,11 @@ public class Moto extends Vehiculo implements Rodable {
 
     @Override
     public byte getNumRuedas() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    return getNumRuedas();
+        return RUEDAS;
     }
 
     @Override
     public void moverse() {
-      //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    System.out.println("Adelante en moto" + toString());
+        System.out.println("Moviendo motillo " + toString());
     }
-    
 }

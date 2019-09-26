@@ -1,0 +1,40 @@
+ body{
+      background-color: green;
+      }
+header{
+       background-color:    #66ff66;  
+       text-align: center;
+       padding: 20px;
+      }  
+*{
+          margin: 0px;
+          padding: 0px;
+          
+      }
+.letraazul{
+          color:blue;
+       }
+.muchomargen{
+           
+           margin: 60px 20px 40px 56px;
+       }
+       nav,.fondonarnja{
+           
+           background-color: orange;
+       }
+      p, #miid{
+           background-color: white;
+           text-transform: uppercase;
+       }
+       
+       header nav{ /* todos los nav que esten dentro de un header*/
+           font-style:italic ;
+           
+       }
+        header > nav{ /* todos los nav de la pagina*/
+           font-style:italic ;
+           
+       }
+       div > *:hover{
+           background-color: red;
+       }

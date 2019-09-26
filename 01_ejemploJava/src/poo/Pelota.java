@@ -9,8 +9,15 @@ package poo;
  *
  * @author alumno
  */
-public interface Rodable {
-    // int ruedas = 10;
-    byte getNumRuedas();
-    void moverse();    
+public class Pelota implements Rodable {
+
+    @Override
+    public byte getNumRuedas() {
+        return 1;
+    }
+    @Override
+    public void moverse() {
+        
+        System.out.println("Bota y rueda");
+    }
 }

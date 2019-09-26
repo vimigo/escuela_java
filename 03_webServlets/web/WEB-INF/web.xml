@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee">
+    <servlet>
+        <servlet-name>ServletHola</servlet-name>
+        <servlet-class>com.sinensia.servlets.Hola</servlet-class>
+        <servlet-mapping>
+            <servlet-name>ServletHola</servlet-name>
+            <url-pattern>/Hola</url-pattern>
+        </servlet-mapping>
+    </servlet>
+    <servlet>
+        <servlet-name>ParamServlet</servlet-name>
+        <servlet-class>com.sinensia.servlets.ParamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletHola</servlet-name>
+        <url-pattern>/Hola</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ParamServlet</servlet-name>
+        <url-pattern>/param</url-pattern>
+    </servlet-mapping>
+</web-app>
